@@ -14,4 +14,4 @@ migrate:
 web:
   image: atharvadankhade/three-tier-web:1.0
   port: 3000
-  replicas: 1
+  replicas: 2
