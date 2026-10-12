@@ -1,0 +1,17 @@
+postgres:
+  image: postgres:17-alpine
+  database: app
+  port: 5432
+
+  storage:
+    size: 1Gi
+api:
+  image: atharvadankhade/three-tier-api:1.0
+  port: 3001
+  replicas: 1
+migrate:
+  image: atharvadankhade/three-tier-migrate:1.0
+web:
+  image: atharvadankhade/three-tier-web:1.0
+  port: 3000
+  replicas: 1
