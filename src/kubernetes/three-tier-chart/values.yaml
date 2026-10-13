@@ -6,12 +6,12 @@ postgres:
   storage:
     size: 1Gi
 api:
-  image: atharvadankhade/three-tier-api:1.0
+  image: atharvadankhade/three-tier-api:053a4e57119b88e0998a33bd2c9279a48053073f
   port: 3001
   replicas: 1
 migrate:
-  image: atharvadankhade/three-tier-migrate:1.0
+  image: atharvadankhade/three-tier-migrate:053a4e57119b88e0998a33bd2c9279a48053073f
 web:
-  image: atharvadankhade/three-tier-web:1.0
+  image: atharvadankhade/three-tier-web:053a4e57119b88e0998a33bd2c9279a48053073f
   port: 3000
   replicas: 2
